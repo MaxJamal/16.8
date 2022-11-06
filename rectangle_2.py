@@ -17,3 +17,13 @@ circle_2 = Circle(7)
 
 print(f'{round(circle_1.get_area_circle(), 2)}\n'
       f'{round(circle_2.get_area_circle(), 2)}\n')
+
+figures = [rec_1, rec_2, square_1, square_2, circle_1, circle_2]
+
+for i in figures:
+      if isinstance(i, Rectangle):
+            print(f'Площадь прямоугольника: {i.get_area()}\n')
+      elif isinstance(i, Square):
+            print(f'Площадь квадрата: {i.get_area_square()}\n')
+      else:
+            print(f'Площадь круга: {round(i.get_area_circle(), 2)}\n')
